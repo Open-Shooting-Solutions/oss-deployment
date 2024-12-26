@@ -35,7 +35,7 @@ jobs:
           yamllint_file_or_dir: '.'
           yamllint_strict: true
           yamllint_comment: false
-          yamllint_config_datapath: '{rules: {line-length: {max: 120}}}'
+          yamllint_config_datapath: '{extends: strict, rules: {line-length: {max: 120}}}'
 
   package_tar_tgz:
     name: package_tar_tgz
