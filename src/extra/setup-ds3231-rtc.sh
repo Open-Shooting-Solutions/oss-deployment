@@ -1,0 +1,1 @@
+apt install i2c-tools
