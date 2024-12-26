@@ -35,6 +35,14 @@ jobs:
           yamllint_file_or_dir: '.'
           yamllint_strict: true
           yamllint_comment: false
+  lint_docker_compose_files:
+    name: lint_docker_compose_files
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout_repo
+        uses: actions/checkout@v4
+      - name: run_hadolint
+        uses: hadolint/hadolint-action@v3.1.0
 
   package_tar_tgz:
     name: package_tar_tgz
