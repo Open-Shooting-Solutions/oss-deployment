@@ -1,3 +1,4 @@
+#!/bin/bash
 APP_FOLDER="/opt/oss"
 
 echo "OSS installation script started"
