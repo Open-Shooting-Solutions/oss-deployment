@@ -35,7 +35,6 @@ jobs:
           yamllint_file_or_dir: '.'
           yamllint_strict: true
           yamllint_comment: false
-          yamllint_config_datapath: '{extends: strict, rules: {line-length: {max: 120}}}'
 
   package_tar_tgz:
     name: package_tar_tgz
@@ -46,4 +45,5 @@ jobs:
       - name: Create tar.gz Package
         run: |
           mkdir -p artifact
-          tar -czvf artifact/repository.tar.gz --exclude=".git" --exclude=".github" .
+          cd ./src
+          tar -czvf ../artifact/package.tar.gz .
