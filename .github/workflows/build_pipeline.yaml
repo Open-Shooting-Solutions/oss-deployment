@@ -9,8 +9,6 @@ jobs:
   lint_bash_files:
     name: lint_bash_files
     runs-on: ubuntu-latest
-    container:
-      image: python:3.12-slim-bookworm
     steps:
       - name: checkout_repo
         uses: actions/checkout@v4
@@ -19,8 +17,6 @@ jobs:
   lint_env_files:
     name: lint_env_files
     runs-on: ubuntu-latest
-    container:
-      image: python:3.12-slim-bookworm
     steps:
       - name: checkout_repo
         uses: actions/checkout@v4
@@ -32,8 +28,6 @@ jobs:
   lint_yml_files:
     name: lint_yml_files
     runs-on: ubuntu-latest
-    container:
-      image: python:3.12-slim-bookworm
     steps:
       - name: checkout_repo
         uses: actions/checkout@v4
@@ -47,8 +41,6 @@ jobs:
   package_install_code:
     name: lint_bash_code
     runs-on: ubuntu-latest
-    container:
-      image: python:3.12-slim-bookworm
     steps:
       - name: checkout_repo
         uses: actions/checkout@v4
